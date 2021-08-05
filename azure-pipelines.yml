@@ -11,8 +11,6 @@ schedules:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  - group: storage-account-vars
 
 steps:      
   - task: PowerShell@2
