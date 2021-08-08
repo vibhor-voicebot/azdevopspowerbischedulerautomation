@@ -18,6 +18,10 @@ steps:
     inputs:
       filePath: 'Start-Pipeline.ps1'
     env:
-      SYSTEM_ACCESSTOKEN: 'b4bgnzehd4k6zrykxitqrfp2wr2djefwuczhqcqx33hjfnx643eq'
-      STORAGEACCOUNTNAME: 'powerbiazdevops'
-      STORAGEACCOUNTKEY: '0rOpd1/JOHwsNREU/i/L2rVf9MTyWGS6AQAD6wXI4e/4reseNvgBTCPOLgKKgYJ+0ma5jMc9Gvp0Yw2dmV/xog=='
+      SYSTEM_ACCESSTOKEN: $(pat)
+      STORAGEACCOUNTNAME: $(storageaccount)
+      STORAGEACCOUNTKEY: $(storageaccountkey)
+
+      #SYSTEM_ACCESSTOKEN: 'b4bgnzehd4k6zrykxitqrfp2wr2djefwuczhqcqx33hjfnx643eq'
+      #STORAGEACCOUNTNAME: 'powerbiazdevops'
+      #STORAGEACCOUNTKEY: '0rOpd1/JOHwsNREU/i/L2rVf9MTyWGS6AQAD6wXI4e/4reseNvgBTCPOLgKKgYJ+0ma5jMc9Gvp0Yw2dmV/xog=='
